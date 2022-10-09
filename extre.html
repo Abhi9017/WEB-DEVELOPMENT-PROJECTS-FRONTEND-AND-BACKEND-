@@ -1,0 +1,39 @@
+if(this.scrollY > 0 ){
+			$(".scroll-up-btn").addClass("show");
+			 $(".scroll-up-btn").click(function(){
+		     $("html").animate({scrollTop:0});
+	 });
+		}else{
+			$(".scroll-up-btn").removeClass("show");
+		}
+		
+	
+	
+	
+	
+	.images{
+	width:45%;
+	height:80%;
+	position:absolute;
+	bottom:0;
+	right:100px;
+	
+}
+.images img{
+	height:100%;
+	position:absolute;
+	left:50%;
+	bottom:0;
+	transform:translateX(-50%);
+	transform:bottom 1s, left 1s;
+}
+
+.images:hover .shape{
+	bottom :40px;
+	
+}
+.images:hover .boy{
+	left:45%;
+}
+
+
